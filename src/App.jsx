@@ -1,14 +1,12 @@
-import Header from "./components/Header/Header"
+import Hero from "./components/Hero/Hero";
 
 function App() {
-
   return (
-    <>
+    <div className="relative overflow-x-hidden bg-[#111]">
       <Header />
-      <section className="bg-[#111] w-full h-screen"></section>
-      <section className="bg-[#111] w-full h-screen"></section>
-    </>
-  )
+      <Hero />
+    </div>
+  );
 }
 
-export default App
+export default App;
