@@ -1,10 +1,12 @@
+import Hero from "./components/Hero/Hero";
+import FAQ from "./components/FAQ/FAQ";
 function App() {
-
   return (
-    <>
-      <h1 className="">hello</h1>
-    </>
-  )
+    <div className="relative overflow-x-hidden bg-[#111]">
+      <Hero />
+      <FAQ />
+    </div>
+  );
 }
 
-export default App
+export default App;
