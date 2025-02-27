@@ -1,14 +1,16 @@
 // eslint-disable-next-line no-unused-vars
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import React, { useState } from "react";
-
+ 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
-
+ 
   const toggleAccordion = (index) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
-
-  const accordionItems = [  
+ 
+  const accordionItems = [
     {
       id: "collapseOne",
       title: "DIDO",
@@ -29,20 +31,32 @@ const FAQ = () => {
     },
   ];
 
+  useGSAP(()=>{
+    gsap.from('#faq', {
+      duration: 0.8,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: '#faq',
+        start: 'top center+=200px',
+        toggleActions: 'play none none reverse',
+      }
+    })
+  }, [])
+ 
   return (
-    <div className="w-screen h-screen ">
-
+    <div id="faq" className="w-screen py-7 lg:w-[70%] lg:mx-auto">
+ 
       <div>
-      <h1 className="text-[#599de6] text-3xl !my-5 !ml-[370px] ">Frequently asked questions</h1>
-      <p className="text-[#4a79ab] text-[15px] !my-5 !ml-[370px] w-[700px]">Have a different question and can’t find the answer you’re looking for? Reach out to our support team by sending us an email and we’ll get back to you as soon as we can.</p>
+        <h1 className="text-center text-3xl my-5 lg:text-5xl">Frequently asked questions</h1>
+        <p className=" text-[15px] my-5 mx-auto w-[90%] lg:text-2xl">Have a different question and can’t find the answer you’re looking for? Reach out to our support team by sending us an email and we’ll get back to you as soon as we can.</p>
       </div>
       <div className="flex flex-col items-center justify-center">
-        
+       
       {accordionItems.map((item, index) => (
-        <div key={item.id} className="accordion-item w-[800px] !p-2 !my-4 border-b-2 border-[#FFFCE1]">
+        <div key={item.id} className="accordion-item  py-2 my-4 border-b-2 border-[#FFFCE1] w-[95%]">
           <h2 className="accordion-header">
             <button
-              className="accordion-button flex justify-between items-center w-full p-4 text-left font-medium text-[#4a79ab]  focus:outline-none"
+              className="accordion-button flex justify-between items-center w-full p-4 text-left font-medium   focus:outline-none"
               aria-expanded={openIndex === index}
               aria-controls={item.id}
               onClick={() => toggleAccordion(index)}
@@ -73,7 +87,7 @@ const FAQ = () => {
             }`}
             aria-labelledby={`heading-${item.id}`}
           >
-            <div className="p-4 text-[steelblue]" dangerouslySetInnerHTML={{ __html: item.content }} />
+            <div className="p-4 " dangerouslySetInnerHTML={{ __html: item.content }} />
           </div>
         </div>
       ))}
@@ -81,5 +95,6 @@ const FAQ = () => {
     </div>
   );
 };
-
+ 
 export default FAQ;
+ 
