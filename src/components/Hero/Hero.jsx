@@ -1,9 +1,12 @@
-import React from "react";
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from "react";
 
 const Hero = () => {
+
+  
   return (
     <>
-      <div className="w-full h-screen ">
+      <div className="w-full h-screen">
 
         <img className="pointer-events-none cursor-none w-full absolute top-[15%] " src="img/herobg.png" alt="" />
         <img className="pointer-events-none cursor-none w-[80%] absolute top-[-25%] right-[-15%]" src="img/herobg.png" alt="" />
@@ -30,7 +33,7 @@ const Hero = () => {
           {/* middle */}
 
           <div className="flex gap-4 mt-18 items-center  justify-center" id="footer_info">
-            <button className="bg-blue-900 z-[2]  text-xl p-2 rounded hover:bg-blue-300 hover:rounded-3xl hover:text-blue-900 transition-all duration-500">Download</button>
+            <button onClick={()=> navigate("")} className="bg-blue-900 z-[2]  text-xl p-2 rounded hover:bg-blue-300 hover:rounded-3xl hover:text-blue-900 transition-all duration-500">Download</button>
           </div>
         </div>
 

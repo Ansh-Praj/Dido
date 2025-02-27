@@ -1,11 +1,13 @@
-import Hero from "./components/Hero/Hero";
-import FAQ from "./components/FAQ/FAQ";
+import Footer from "./components/Footer/Footer";
+import Download from './components/Download/Download'
+import Hero from './components/Hero/Hero'
 function App() {
   return (
-    <div className="relative overflow-x-hidden bg-[#111]">
-      <Hero />
-      <FAQ />
-    </div>
+    <div className="overflow-y-hidden bg-[#111]">
+      <Hero/>
+      
+      {/* <Download/> */}
+      </div>
   );
 }
 

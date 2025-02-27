@@ -8,7 +8,7 @@ const FAQ = () => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
-  const accordionItems = [
+  const accordionItems = [  
     {
       id: "collapseOne",
       title: "DIDO",

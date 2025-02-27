@@ -3,7 +3,7 @@
 
 
 /* custom scrollbar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 4px; 
   }
 
@@ -13,4 +13,7 @@
   
   ::-webkit-scrollbar-thumb:hover {
     background: #2b2b2b; 
-  }
+    background-color: red;
+  } */
+
+
