@@ -28,10 +28,17 @@ function App() {
   })
 
   return (
-    <div className="relative overflow-x-hidden bg-[#111]">
+    <div className="overflow-hidden  bg-[#111]">
+      <Header />
       <Hero />
+      <section className="w-full h-[8vh] bg-[#111] lg:h-[50vh]"></section>
+      <About />
+      <section className="w-full h-[20vh] bg-[#111]"></section>
+      <Download />
       <FAQ />
+      <section className="w-full h-[50vh] bg-[#111]"></section>
     </div>
+ 
   );
 }
 

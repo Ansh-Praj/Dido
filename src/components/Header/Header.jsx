@@ -11,7 +11,7 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpened, setIsMenuOpened] = useState(false)
 
-  const menuRef = useRef()
+  const menuRef = useRef()  
   const navbarMenuRef = useRef()
   const menuTimeline = useRef()
 
@@ -136,7 +136,7 @@ function Header() {
           <li><a 
           onClick={(e) => handleJumpTo(e)}
           className={`hover:bg-secondary hover:text-[#111] cursor-pointer  px-2 py-1 rounded transition-colors duration-150`}
-          name="">Support</a></li>
+          name="">Support Us</a></li>
         </ul>
 
         <div className="lg:block hidden">
