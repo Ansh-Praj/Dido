@@ -29,32 +29,6 @@ function Header() {
   }, [])
 
   useEffect(()=>{
-    
-    const tl = gsap.timeline()
-    // tl.to('.mobile-navbar-items', {
-    //   top: 0,
-    //   duration: 1,
-    //   ease: 'power1.inOut'
-    // })
-
-    // tl.to('.mobile-navbar-items ul a', {
-    //   opacity: 1,
-    //   stagger: 0.1,
-    //   duration: 0.3
-    // })
-
-    // tl.pause()
-
-
-    // if(isMenuOpened) {
-    //   tl.play()
-    // } else if (isMenuOpened === false) {
-    //   tl.reverse()
-    // }
-    
-  })
-
-  useEffect(()=>{
 
     gsap.set(navbarMenuRef.current.querySelectorAll('a'),{
       opacity: 0
@@ -89,31 +63,88 @@ function Header() {
     menuTimeline.current.reverse()
 
   }
+
+  function handleJumpTo(e){
+    const c = e.target.name
+    const el = document.querySelector(c);
+
+    window.scrollTo({
+      top: el.offsetTop - 320,
+      behavior: "smooth"
+    })
+    
+    
+  }
+
+  useGSAP(()=>{
+    const tl = gsap.timeline()
+    tl.to('header', {
+      top: '0',
+      duration: 0.5
+    })
+    tl.from('#logo_info > p', {
+      x: '-80px',
+      opacity: 0,
+      duration: 0.5
+    })
+    .from('#home #main_info > p:first-child', {
+      opacity: 0,
+      duration: 0.5
+    })
+    .from('#home #main_info > p:nth-child(2)', {
+      opacity: 0,
+      duration: 0.5
+    })
+    .from('#home #main_info > p:nth-child(3)', {
+      opacity: 0,
+      duration: 0.5
+    })
+    .from('#home img:first-child', {
+      opacity: 0,
+      y: '-200px',
+      duration: 0.5
+    })
+    .from('#home img:nth-child(2)', {
+      opacity: 0,
+      y: '100px',
+      duration: 0.5
+    })
+    .from('#home video', {
+      opacity: 0,
+      y: '100px',
+      duration: 0.5
+    })
+    
+  }, [])
   
 
   return (
-    <header className={`fixed inset-x-0 transition-colors duration-200 z-50 text-secondary ${isScrolled ? 'bg-[#111]' : ''}`}>
+    <header className={`-top-[100px] fixed inset-x-0 transition-colors duration-200 z-50  ${isScrolled ? 'bg-[#111] ' : ''}`}>
       <nav className='w-full flex justify-between items-center px-8 py-4 font-bold'>
 
         <h1 className='text-xl transition-colors duration-150'>DIDO</h1>
         {/* larger screens */}
         <ul className='lg:flex justify-between w-1/4 hidden'>
           <li><a 
-          className={`  ${isScrolled ? 'hover:bg-black' : 'hover:bg-primary'} hover:text-secondary px-2 py-1 rounded transition-colors duration-150`}
-          href="#">Home</a></li>
+          onClick={(e) => handleJumpTo(e)}
+          className={`hover:bg-secondary hover:text-[#111] cursor-pointer  px-2 py-1 rounded transition-colors duration-150`}
+          name="#home">Home</a></li>
           <li><a 
-          className={`${isScrolled ? 'hover:bg-black' : 'hover:bg-primary'} hover:text-secondary px-2 py-1 rounded transition-colors duration-150`}
-          href="#">About</a></li>
+          onClick={(e) => handleJumpTo(e)}
+          className={`hover:bg-secondary hover:text-[#111] cursor-pointer  px-2 py-1 rounded transition-colors duration-150`}
+          name="#about">About</a></li>
           <li><a 
-          className={`${isScrolled ? 'hover:bg-black' : 'hover:bg-primary'} hover:text-secondary px-2 py-1 rounded transition-colors duration-150`}
-          href="#">FAQ</a></li>
-          <li><a 
-          className={`${isScrolled ? 'hover:bg-black' : 'hover:bg-primary'} hover:text-secondary px-2 py-1 rounded transition-colors duration-150`}
-          href="#">Support</a></li>
+          onClick={(e) => handleJumpTo(e)}
+          className={`hover:bg-secondary hover:text-[#111] cursor-pointer  px-2 py-1 rounded transition-colors duration-150`}
+          name="">Support</a></li>
         </ul>
 
         <div className="lg:block hidden">
-          <button className={`${isScrolled ? 'hover:bg-black' : 'hover:bg-primary'} hover:text-secondary border border-gray-400    transition-colors duration-150 px-6 py-3 cursor-pointer flex items-center gap-x-2`}>Download <FaArrowRightLong  /></button>
+          <button 
+          onClick={(e) => handleJumpTo(e)}
+          className={` border border-gray-400 transition-colors duration-150 px-6 py-3 cursor-pointer flex items-center gap-x-2 hover:bg-secondary hover:text-[#111]`} 
+          name="#download"
+          >Download <FaArrowRightLong  /></button>
         </div>
         
 
@@ -129,10 +160,10 @@ function Header() {
           <IoClose onClick={handleCloseClick} id="close-menu-icon" className="fixed top-[8lvh]  right-4" size={40}/>
 
           <div className="flex flex-col px-10 text-3xl gap-8">
-            <a className="" href="#">Home</a>
-            <a className="" href="#">About</a>
-            <a className="" href="#">FAQ</a>
-            <a className="" href="#">Support</a>
+            <a className="" name="#home" onClick={(e)=>handleJumpTo(e)}>Home</a>
+            <a className="" name="#about" onClick={(e)=>handleJumpTo(e)}>About</a>
+            <a className="" name='' onClick={(e)=>handleJumpTo(e)}>Support Us</a>
+            <a className="" name="#download"  onClick={(e)=>handleJumpTo(e)}>Download</a>
           </div>
         </div>
         

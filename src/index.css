@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+
 @import "tailwindcss";
 
 
@@ -22,4 +23,9 @@
 }
 nav{
   top: env(safe-area-inset-top);
+}
+
+body{
+  color: var(--color-secondary)
+  
 }
