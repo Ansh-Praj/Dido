@@ -12,6 +12,7 @@ function Download() {
       duration: 0.8,
       opacity: 0,
       scrollTrigger: {
+        trigger: downloadContainerRef.current,
         toggleActions: 'play none none reverse',
         start: 'center bottom',
       }
