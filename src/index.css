@@ -1,9 +1,9 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
 
 
 /* custom scrollbar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 4px; 
   }
 
@@ -13,10 +13,13 @@
   
   ::-webkit-scrollbar-thumb:hover {
     background: #2b2b2b; 
-  }
+  } */
 
 
 @theme{
     --color-primary: #02343F;
-    --color-secondary: #F0EDCC;
+    --color-secondary: #FFFCE1;
+}
+nav{
+  top: env(safe-area-inset-top);
 }
