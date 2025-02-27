@@ -5,16 +5,19 @@
 
 /* custom scrollbar */
 ::-webkit-scrollbar {
-    width: 4px; 
-  }
+  width: 4px; 
+}
 
-  ::-webkit-scrollbar-thumb{
-    background: #434343; 
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #2b2b2b; 
-  }
+::-webkit-scrollbar-thumb{
+  background: #434343; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2b2b2b; 
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
 
 
 @theme{
