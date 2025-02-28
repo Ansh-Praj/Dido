@@ -15,6 +15,7 @@ function Download() {
         trigger: downloadContainerRef.current,
         toggleActions: 'play none none reverse',
         start: 'center bottom',
+
       }
     })
   }, {scope: downloadContainerRef.current, dependencies: []})
@@ -31,7 +32,7 @@ function Download() {
  
               <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 ">
                 <form className="grow ">
-                  <select className="border-2 outline-none block w-full p-2">
+                  <select className="border-2 bg-[#1C2022] outline-none block w-full p-2">
                     <option>Select an Platform</option>
                     <option>Window</option>
                     <option>Linux</option>
