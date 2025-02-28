@@ -9,6 +9,7 @@ import Download from "./components/Download/Download";
 import FAQ from "./components/FAQ/FAQ";
 import About from "./components/About/About";
 import { useRef } from "react";
+import Footer from "./components/Footer/Footer";
 
 gsap.registerPlugin(ScrollTrigger)
 

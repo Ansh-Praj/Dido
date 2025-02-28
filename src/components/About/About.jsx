@@ -42,7 +42,7 @@ function About() {
 
 
   return (
-    <div id="about" className="w-full h-screen mt-10 px-20">
+    <div id="about" className="w-full h-screen mt-10 px-20 hidden lg:block">
 
       <div className='grid grid-cols-2 w-full gap-10 '>
       
