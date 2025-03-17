@@ -1,6 +1,5 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import Lottie from "lottie-react";
 import { useEffect, useRef } from "react";
 import { useState } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -9,9 +8,7 @@ import { IoClose } from "react-icons/io5";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isMenuOpened, setIsMenuOpened] = useState(false)
 
-  const menuRef = useRef()  
   const navbarMenuRef = useRef()
   const menuTimeline = useRef()
 
@@ -23,7 +20,6 @@ function Header() {
       } else {
         setIsScrolled(true)
       }
-        
     })
 
   }, [])
