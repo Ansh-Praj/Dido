@@ -42,7 +42,7 @@ function About() {
 
 
   return (
-    <div id="about" className="w-full h-screen mt-10 px-20">
+    <div id="about" className="w-full h-screen mt-10 px-20 hidden lg:block">
 
       <div className='grid grid-cols-2 w-full gap-10 '>
       
@@ -82,9 +82,9 @@ function About() {
          </div>{/* side 1 */}
 
             <div className=' relative hidden lg:block'>
-                <h1 id="box-1" className='bg-green-300 w-[250px] h-[250px] border absolute right-[10%] top-[5%] z-1'></h1>
-                <h1 id="box-2" className='bg-green-400 w-[250px] h-[250px] border absolute right-[-4%] top-[35%]'></h1>
-                <h1 id="box-3" className='bg-green-500 w-[250px] h-[250px] border absolute right-[40%] top-[28%] z-1'></h1>
+                <h1 id="box-1" className='bg-yellow-100 w-[250px] h-[250px] border absolute right-[10%] top-[5%] z-1'></h1>
+                <h1 id="box-2" className='bg-yellow-200 w-[250px] h-[250px] border absolute right-[-4%] top-[35%]'></h1>
+                <h1 id="box-3" className='bg-yellow-300 w-[250px] h-[250px] border absolute right-[40%] top-[28%] z-1'></h1>
             </div>{/* side 2 */}
 
 
