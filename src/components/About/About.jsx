@@ -3,40 +3,40 @@ import gsap from 'gsap';
 import React from 'react';
 
  function About() {
-//   useGSAP(() => {
-//     gsap.from("#box-1", {
-//       opacity: 0,
-//       y: '-150px',
-//       duration: 0.5,
-//       scrollTrigger: {
-//         trigger: "#about",
-//         start: "center bottom",
-//         toggleActions: "play none none reverse"
-//       }
-//     });
+  useGSAP(() => {
+    gsap.from("#box-1", {
+      opacity: 0,
+      y: '-150px',
+      duration: 0.5,
+      scrollTrigger: {
+        trigger: "#about",
+        start: "center bottom",
+        toggleActions: "play none none reverse"
+      }
+    });
 
-//     gsap.from("#box-2", {
-//       opacity: 0,
-//       x: '150px',
-//       duration: 0.5,
-//       scrollTrigger: {
-//         trigger: "#about",
-//         start: "center bottom",
-//         toggleActions: "play none none reverse"
-//       }
-//     });
+    gsap.from("#box-2", {
+      opacity: 0,
+      x: '150px',
+      duration: 0.5,
+      scrollTrigger: {
+        trigger: "#about",
+        start: "center bottom",
+        toggleActions: "play none none reverse"
+      }
+    });
 
-//     gsap.from("#box-3", {
-//       opacity: 0,
-//       x: '-150px',
-//       duration: 0.5,
-//       scrollTrigger: {
-//         trigger: "#about",
-//         start: "center bottom",
-//         toggleActions: "play none none reverse"
-//       }
-//     });
-//   });
+    gsap.from("#box-3", {
+      opacity: 0,
+      x: '-150px',
+      duration: 0.5,
+      scrollTrigger: {
+        trigger: "#about",
+        start: "center bottom",
+        toggleActions: "play none none reverse"
+      }
+    });
+  });
 
   return (
     <div id="about" className="w-full h-auto py-20 px-4 sm:px-10 lg:px-20">
