@@ -1,7 +1,6 @@
-// eslint-disable-next-line no-unused-vars
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React, { useState } from "react";
+import { useState } from "react";
  
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);

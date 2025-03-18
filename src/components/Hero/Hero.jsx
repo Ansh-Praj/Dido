@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useState } from "react";
+import  { useState } from "react";
 
 const Hero = () => {
 
@@ -15,7 +14,6 @@ const Hero = () => {
           <div className="flex items-center justify-start px-5 lg:relative lg:-top-20 " id="logo_info">
             <p className="text-[13px]">just shipped v1.0</p>
           </div>
-          {/* header */}  
 
           <div className="">
             <div className="mt-20 flex flex-col items-center justify-center lg:mt-0" id="main_info">
@@ -34,7 +32,6 @@ const Hero = () => {
 
 
 
-          {/* middle */}
 
         </div>
           <div className="flex gap-4 mt-10 items-center justify-center absolute left-[50%] bottom-[5%] z-10" id="footer_info">
@@ -45,7 +42,6 @@ const Hero = () => {
 
 
 
-          {/* footer */}
       </div>
     </>
   );

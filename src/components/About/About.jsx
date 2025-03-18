@@ -88,8 +88,6 @@ import React, { useEffect } from 'react';
       <div className='grid grid-cols-1 lg:grid-cols-2 w-full gap-10'>
         <div className='mb-10 lg:mb-20'>
           <div>
-        
-          {/* <iframe className="w-[200vw] h-[40vh] absolute top-[22%] right-[-20%]" src='https://my.spline.design/happyrobotbuttoncopy-d8802461684714bd9ef8af07a6a40d85/' frameborder='0' ></iframe> */}
           <iframe className="w-[200vw] h-[100vh] absolute top-[22%] left-[0%] hidden lg:block" src='https://my.spline.design/happyrobotbuttoncopy-d8802461684714bd9ef8af07a6a40d85/' frameborder='0' ></iframe>
 
             <h1 className='text-2xl sm:text-3xl lg:text-5xl'>What Is Dido?</h1>
