@@ -118,7 +118,14 @@ function Header() {
     <header className={`-top-[100px] fixed inset-x-0 transition-colors duration-200 z-50  ${isScrolled ? 'bg-[#111] ' : ''}`}>
       <nav className='w-full flex justify-between items-center px-8 py-4 font-bold'>
 
-        <h1 className='text-xl transition-colors duration-150'>DIDO</h1>
+        <a 
+          onClick={(e) => handleJumpTo(e)}
+          className={`hover:bg-secondary hover:text-[#111] cursor-pointer  px-2 py-1 rounded transition-colors  duration-150`}
+          name="#home">
+            <img className="w-10" name="#home"
+              src="img/logo.png" alt=""/>
+          </a>
+
         {/* larger screens */}
         <ul className='lg:flex justify-between w-1/4 hidden'>
           <li><a 

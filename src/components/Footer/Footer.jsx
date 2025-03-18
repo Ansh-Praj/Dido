@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-  <div className="w-full text-[#111] bg-[#FFFCE1] rounded-tl-[50px] hidden lg:block">
+  <div className="w-full text-[#111] bg-[#FFFCE1] rounded-tl-[50px]">
     <div className='grid grid-cols-12 p-4'>
         <div className=' flex flex-col '>
           <h1 className='my-2'>LOGO</h1>

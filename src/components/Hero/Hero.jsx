@@ -17,12 +17,12 @@ const Hero = () => {
           </div>
           {/* header */}  
 
-          <div>
+          <div className="">
             <div className="mt-20 flex flex-col items-center justify-center lg:mt-0" id="main_info">
-              <p className="text-[2.2rem] text-center whitespace-nowrap font-bold mt-4 lg:text-7xl">Welcome to DIDO</p>
-              <p className="text-[1.5rem] mt-10 font-semibold lg:text-3xl">The greatest virtual assistant</p>
+              <p className="text-[2.2rem] text-center whitespace-nowrap font-bold mt-4 lg:text-7xl z-10">Welcome to DIDO</p>
+              <p className="text-[1.5rem] mt-10 font-semibold lg:text-3xl z-10">The greatest virtual assistant</p>
 
-              <p className="text-md px-2 mt-3 w-full text-center leading-6 lg:w-[50vw]">
+              <p className="text-md px-2 mt-3 w-full text-center leading-6 lg:w-[50vw] z-10">
                 DiDo is an advanced voice assistant designed to streamline tasks
                 through seamless voice commands. It enables users to open apps,
                 search within applications, and perform actions efficiently,
