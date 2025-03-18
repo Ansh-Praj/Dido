@@ -128,15 +128,15 @@ function Header() {
 
         {/* larger screens */}
         <ul className='lg:flex justify-between w-1/4 hidden'>
-          <li className="hover:scale-105 duration-150"><a 
+          <li className="hover:scale-115 duration-300"><a 
           onClick={(e) => handleJumpTo(e)}
           className={`hover:bg-secondary hover:text-[#111] cursor-pointer  px-2 py-1 rounded transition-colors duration-150 `}
           name="#home">Home</a></li>
-          <li className="hover:scale-105 duration-150"><a 
+          <li className="hover:scale-115 duration-300"><a 
           onClick={(e) => handleJumpTo(e)}
           className={`hover:bg-secondary hover:text-[#111] cursor-pointer  px-2 py-1 rounded transition-colors duration-150 `}
           name="#about">About</a></li>
-          <li className="hover:scale-105 duration-150"><a 
+          <li className="hover:scale-115 duration-300"><a 
           onClick={(e) => handleJumpTo(e)}
           className={`hover:bg-secondary hover:text-[#111] cursor-pointer  px-2 py-1 rounded transition-colors duration-150`}
           name="">Support Us</a></li>
