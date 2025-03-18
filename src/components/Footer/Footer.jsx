@@ -1,6 +1,15 @@
 import React from 'react';
 
 function Footer() {
+
+  function handleJumpTo(e){
+    const c = e.target.name
+    const el = document.querySelector(c);
+
+    window.scrollTo({
+      top: el.offsetTop - 320,
+      behavior: "smooth"
+    })}
   return (
     <footer className="w-full text-[#111] bg-[#FFFCE1] rounded-tl-[50px] mt-10">
       <div className="grid grid-cols-12 p-8 gap-6">
@@ -12,11 +21,14 @@ function Footer() {
                 src="img/blacklogo.png" alt="" />
           </div>
 {/* part 1 */}
-          <nav className="flex flex-col space-y-2 ">
-            <a href="/" className="hover:text-[#555] transition-colors">Home</a>
-            <a href="/about" className="hover:text-[#555] transition-colors">About</a>
-            <a href="/contact" className="hover:text-[#555] transition-colors">Contact</a>
-          </nav>
+          <div className="flex flex-col space-y-2 ">
+            <a className="hover:text-[#555] transition-colors cursor-pointer" name="#home"  onClick={(e) => handleJumpTo(e)}
+          >Home</a>
+            <a className="hover:text-[#555] transition-colors cursor-pointer" name="#about"  onClick={(e) => handleJumpTo(e)}
+          >About</a>
+            <a className="hover:text-[#555] transition-colors cursor-pointer" name="#download"  onClick={(e) => handleJumpTo(e)}
+          >Download</a>
+          </div>
         </div>
 
         <div className="col-span-12 md:col-span-5">
