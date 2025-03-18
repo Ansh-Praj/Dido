@@ -20,10 +20,10 @@ function Download() {
 
   return (
     <>
-      <div id="download" className="bg-[#FFFCE1] h-[45vh] rounded-b-2xl lg:h-[60vh]">
+      <div id="download" className="bg-[#FFFCE1] h-[35vh] rounded-b-2xl md:h-[30vh] lg:h-[60vh]">
         <div
           ref={downloadContainerRef}
-          className="relative bottom-[30%] w-[90%] max-w-[400px] mx-auto bg-[#1C2022] rounded-2xl p-6 shadow-2xl shadow-[#111] lg:w-[80%] lg:max-w-[800px] lg:p-10"
+          className="relative bottom-[30%] w-[90%]  mx-auto bg-[#1C2022] rounded-2xl p-6 shadow-2xl shadow-[#111] lg:w-[80%] lg:max-w-[800px] lg:p-10"
         >
           <div className="flex flex-col items-center mt-5">
             <p className="text-3xl sm:text-4xl lg:text-6xl mb-6 sm:mb-10 lg:mb-20">
@@ -44,9 +44,7 @@ function Download() {
                 <button className="border-2 py-2 px-4 sm:px-10 cursor-pointer w-full sm:w-auto">
                   Download
                 </button>
-                <a href="#" className="border-2 py-2 px-4 sm:px-10 cursor-pointer w-full sm:w-auto">
-                  Help
-                </a>
+                
               </div>
             </div>
 

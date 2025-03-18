@@ -37,7 +37,7 @@ const Hero = () => {
           {/* middle */}
 
         </div>
-          <div className="flex gap-4 mt-10 items-center justify-center absolute left-[50%] bottom-[5%]" id="footer_info">
+          <div className="flex gap-4 mt-10 items-center justify-center absolute left-[50%] bottom-[5%] z-10" id="footer_info">
             <video
             className="w-7"
             autoPlay loop muted src="video/scroll down.webm"></video>
