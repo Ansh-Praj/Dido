@@ -90,7 +90,7 @@ import React, { useEffect } from 'react';
           <div>
         
           {/* <iframe className="w-[200vw] h-[40vh] absolute top-[22%] right-[-20%]" src='https://my.spline.design/happyrobotbuttoncopy-d8802461684714bd9ef8af07a6a40d85/' frameborder='0' ></iframe> */}
-          <iframe className="w-[200vw] h-[100vh] absolute top-[22%] left-[0%]" src='https://my.spline.design/happyrobotbuttoncopy-d8802461684714bd9ef8af07a6a40d85/' frameborder='0' ></iframe>
+          <iframe className="w-[200vw] h-[100vh] absolute top-[22%] left-[0%] hidden lg:block" src='https://my.spline.design/happyrobotbuttoncopy-d8802461684714bd9ef8af07a6a40d85/' frameborder='0' ></iframe>
 
             <h1 className='text-2xl sm:text-3xl lg:text-5xl'>What Is Dido?</h1>
             <p className='mt-5 text-sm sm:text-base'>Dido is an AI-powered voice assistant designed to work seamlessly across multiple operating systems, including Windows, macOS, and Linux. It allows users to perform various tasks using voice commands, making it a versatile tool for productivity, entertainment, and system management.</p>
