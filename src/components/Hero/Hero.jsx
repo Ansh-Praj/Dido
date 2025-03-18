@@ -9,7 +9,7 @@ const Hero = () => {
       <div id="home" className="w-full h-[80vh] relative lg:h-screen lg:flex lg:justify-center lg:items-center">
 
         <img className="z-[1] pointer-events-none cursor-none w-[90%] absolute top-[-30%] right-[-15%] rotate-6 lg:top-[-65%] sm:top-[-49%]" src="img/herobg.png" alt="upar wali" />
-        <img className="z-[1] pointer-events-none cursor-none w-full absolute bottom-[25%] opacity-60 lg:bottom-[-45%] sm:top-[20%]" src="img/herobg.png" alt="niche wali" />
+        <img className="z-[1] pointer-events-none cursor-none w-full absolute bottom-[25%] opacity-60 lg:bottom-[-45%] sm:top-[26%]" src="img/herobg.png" alt="niche wali" />
 
         <div className="mt-20 relative p-1 lg:w-full lg:mt-10">
           <div className="flex items-center justify-start px-5 lg:relative lg:-top-20 " id="logo_info">

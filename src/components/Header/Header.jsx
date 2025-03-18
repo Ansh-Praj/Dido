@@ -122,8 +122,8 @@ function Header() {
           onClick={(e) => handleJumpTo(e)}
           className={`hover:bg-secondary hover:text-[#111] cursor-pointer  px-2 py-1 rounded transition-colors  duration-150`}
           name="#home">
-            <img className="w-10" name="#home"
-              src="img/logo.png" alt=""/>
+            <img className="w-20" name="#home"
+              src="img/whitelogo.png" alt=""/>
           </a>
 
         {/* larger screens */}

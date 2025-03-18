@@ -56,8 +56,7 @@ function App() {
       <section className="w-full h-[20vh] bg-[#111]"></section>
       <Download />
       <FAQ />
-      <section className="w-full h-[50vh] bg-[#111]"></section>
-
+      <Footer />
       {/* <div ref={cursorRef} className="size-5 rounded-full -translate-x-1/2 -translate-y-1/2 absolute bg-secondary top-19 left-19"></div> */}
 
     </div>
