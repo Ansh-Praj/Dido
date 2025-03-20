@@ -71,7 +71,7 @@ import React from 'react';
           </div>
         </div>
 
-        <div className='relative'> 
+        <div className='relative'>
           <h1 id="box-1" className='bg-yellow-100 w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] border absolute right-[10%]  lg:right-[10%] lg:top-[5%] z-1'></h1>
           <h1 id="box-2" className='bg-yellow-200 w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] border absolute right-[4%] bottom-[-10%] lg:right-[-4%] lg:top-[35%]'></h1>
           <h1 id="box-3" className='bg-yellow-300 w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] border absolute lg:right-[40%] lg:top-[28%] z-1'></h1>
