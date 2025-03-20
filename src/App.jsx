@@ -31,22 +31,6 @@ function App() {
 
   })
 
-  // window.addEventListener('mousemove', (e)=>{
-
-  //   const ctx = gsap.context(()=>{
-  //     gsap.to(cursorRef.current, {
-  //       top: e.pageY,
-  //       left: e.pageX,
-  //       duration: 0.3,
-  //       ease: 'none'
-  //     })
-
-  //   })
-    
-  //   // cursorRef.current.style.top = e.pageY + 'px'
-  //   // cursorRef.current.style.left = e.pageX + 'px'
-  // })
-
   return (
     <div className="overflow-hidden relative  bg-[#111]">
       <Header />
@@ -57,7 +41,6 @@ function App() {
       <Download />
       <FAQ />
       <Footer />
-      {/* <div ref={cursorRef} className="size-5 rounded-full -translate-x-1/2 -translate-y-1/2 absolute bg-secondary top-19 left-19"></div> */}
 
     </div>
  

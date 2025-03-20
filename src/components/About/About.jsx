@@ -1,49 +1,96 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import React from 'react';
+import React, { useEffect } from 'react';
 
  function About() {
-  useGSAP(() => {
-    gsap.from("#box-1", {
-      opacity: 0,
-      y: '-150px',
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: "#about",
-        start: "center bottom",
-        toggleActions: "play none none reverse"
-      }
-    });
+  useEffect(() => {
 
-    gsap.from("#box-2", {
-      opacity: 0,
-      x: '150px',
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: "#about",
-        start: "center bottom",
-        toggleActions: "play none none reverse"
-      }
-    });
+    const ctx = gsap.context(()=>{
 
-    gsap.from("#box-3", {
-      opacity: 0,
-      x: '-150px',
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: "#about",
-        start: "center bottom",
-        toggleActions: "play none none reverse"
+
+      if(window.innerWidth < 640){
+        gsap.from("#box-1", {
+          opacity: 0,
+          y: '-150px',
+          duration: 0.5,
+          scrollTrigger: {
+            trigger: "#about",
+            start: "bottom bottom",
+            toggleActions: "play none none reverse",
+          }
+        });
+    
+        gsap.from("#box-2", {
+          opacity: 0,
+          x: '150px',
+          duration: 0.5,
+          scrollTrigger: {
+            trigger: "#about",
+            start: "bottom bottom",
+            toggleActions: "play none none reverse",
+          }
+        });
+    
+        gsap.from("#box-3", {
+          opacity: 0,
+          x: '-150px',
+          duration: 0.5,
+          scrollTrigger: {
+            trigger: "#about",
+            start: "bottom bottom",
+            toggleActions: "play none none reverse",
+          }
+        });
       }
-    });
-  });
+      
+      else if (window.innerWidth > 640){
+
+        gsap.from("#box-1", {
+          opacity: 0,
+          y: '-150px',
+          duration: 0.5,
+          scrollTrigger: {
+            trigger: "#about",
+            start: "center-=50px bottom",
+            toggleActions: "play none none reverse",
+          }
+        });
+    
+        gsap.from("#box-2", {
+          opacity: 0,
+          x: '150px',
+          duration: 0.5,
+          scrollTrigger: {
+            trigger: "#about",
+            start: "center-=50px bottom",
+            toggleActions: "play none none reverse",
+          }
+        });
+    
+        gsap.from("#box-3", {
+          opacity: 0,
+          x: '-150px',
+          duration: 0.5,
+          scrollTrigger: {
+            trigger: "#about",
+            start: "center-=50px bottom",
+            toggleActions: "play none none reverse",
+          }
+        });
+      }
+    })
+
+    return () => ctx.revert();
+  }, []);
 
   return (
-    <div id="about" className="w-full h-auto py-20 px-4 sm:px-10 lg:px-20">
+    <div id="about" className="w-full h-auto px-4 sm:px-10 lg:px-20">
       <div className='grid grid-cols-1 lg:grid-cols-2 w-full gap-10'>
         <div className='mb-10 lg:mb-20'>
           <div>
-            <h1 className='text-2xl sm:text-3xl'>What Is Dido ?</h1>
+          <iframe className="w-[200vw] h-[100vh] absolute top-[22%] left-[0%] hidden lg:block" src='https://my.spline.design/happyrobotbuttoncopy-d8802461684714bd9ef8af07a6a40d85/' frameBorder='0' ></iframe>
+
+            <h1 className='text-2xl sm:text-3xl lg:text-5xl'>What Is Dido?</h1>
             <p className='mt-5 text-sm sm:text-base'>Dido is an AI-powered voice assistant designed to work seamlessly across multiple operating systems, including Windows, macOS, and Linux. It allows users to perform various tasks using voice commands, making it a versatile tool for productivity, entertainment, and system management.</p>
             <p className='mt-3 text-sm sm:text-base'>Dido is a real product, it would likely be available for download for Windows, macOS, and Linux.</p>
           </div>
@@ -71,10 +118,17 @@ import React from 'react';
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className='relative'>
           <h1 id="box-1" className='bg-yellow-100 w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] border absolute right-[10%]  lg:right-[10%] lg:top-[5%] z-1'></h1>
           <h1 id="box-2" className='bg-yellow-200 w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] border absolute right-[4%] bottom-[-10%] lg:right-[-4%] lg:top-[35%]'></h1>
           <h1 id="box-3" className='bg-yellow-300 w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] border absolute lg:right-[40%] lg:top-[28%] z-1'></h1>
+=======
+        <div className='relative h-32 lg:h-auto'> 
+          <h1 id="box-1" className='bg-yellow-100 w-[150px] h-[150px] border absolute right-[30%] top-[-50%] lg:w-[250px] lg:h-[250px]    lg:right-[10%] lg:top-[5%] z-1'></h1>
+          <h1 id="box-2" className='bg-yellow-200 w-[150px] h-[150px] border absolute right-[7%] top-[10%] lg:w-[250px] lg:h-[250px]   lg:right-[-4%] lg:top-[35%]'></h1>
+          <h1 id="box-3" className='bg-yellow-300 w-[150px] h-[150px] border absolute right-[53%] top-[10%] lg:w-[250px] lg:h-[250px]  lg:right-[40%] lg:top-[28%] z-1'></h1>
+>>>>>>> 23f97cd0eead93d6287e2a438d47843cfafe1fc8
         </div>
       </div>
     </div>
