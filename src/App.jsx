@@ -41,7 +41,6 @@ function App() {
       <Download />
       <FAQ />
       <Footer />
-
     </div>
  
   );

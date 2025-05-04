@@ -88,7 +88,8 @@ import React, { useEffect } from 'react';
       <div className='grid grid-cols-1 lg:grid-cols-2 w-full gap-10'>
         <div className='mb-10 lg:mb-20'>
           <div>
-          <iframe className="w-[200vw] h-[100vh] absolute top-[22%] left-[0%] hidden lg:block" src='https://my.spline.design/happyrobotbuttoncopy-d8802461684714bd9ef8af07a6a40d85/' frameBorder='0' ></iframe>
+          <iframe className="w-[200vw] h-[100vh] absolute top-[22%] left-[0%]  hidden lg:block" src='https://my.spline.design/happyrobotbuttoncopy-d8802461684714bd9ef8af07a6a40d85/' frameBorder='0' ></iframe>
+          {/* <iframe className='w-[200vw] h-[100vh] absolute top-[14%] right-[-20%] hidden lg:block' src='https://my.spline.design/happyrobotbuttoncopy-13434c870202a6c8a6b79f718f32f267/' frameborder='0' width='100%' height='100%'></iframe> */}
 
             <h1 className='text-2xl sm:text-3xl lg:text-5xl'>What Is Dido?</h1>
             <p className='mt-5 text-sm sm:text-base'>Dido is an AI-powered voice assistant designed to work seamlessly across multiple operating systems, including Windows, macOS, and Linux. It allows users to perform various tasks using voice commands, making it a versatile tool for productivity, entertainment, and system management.</p>
@@ -118,17 +119,11 @@ import React, { useEffect } from 'react';
           </div>
         </div>
 
-<<<<<<< HEAD
-        <div className='relative'>
-          <h1 id="box-1" className='bg-yellow-100 w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] border absolute right-[10%]  lg:right-[10%] lg:top-[5%] z-1'></h1>
-          <h1 id="box-2" className='bg-yellow-200 w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] border absolute right-[4%] bottom-[-10%] lg:right-[-4%] lg:top-[35%]'></h1>
-          <h1 id="box-3" className='bg-yellow-300 w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] border absolute lg:right-[40%] lg:top-[28%] z-1'></h1>
-=======
+        
         <div className='relative h-32 lg:h-auto'> 
           <h1 id="box-1" className='bg-yellow-100 w-[150px] h-[150px] border absolute right-[30%] top-[-50%] lg:w-[250px] lg:h-[250px]    lg:right-[10%] lg:top-[5%] z-1'></h1>
           <h1 id="box-2" className='bg-yellow-200 w-[150px] h-[150px] border absolute right-[7%] top-[10%] lg:w-[250px] lg:h-[250px]   lg:right-[-4%] lg:top-[35%]'></h1>
           <h1 id="box-3" className='bg-yellow-300 w-[150px] h-[150px] border absolute right-[53%] top-[10%] lg:w-[250px] lg:h-[250px]  lg:right-[40%] lg:top-[28%] z-1'></h1>
->>>>>>> 23f97cd0eead93d6287e2a438d47843cfafe1fc8
         </div>
       </div>
     </div>

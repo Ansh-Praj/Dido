@@ -11,24 +11,25 @@ const FAQ = () => {
  
   const accordionItems = [
     {
-      id: "collapseOne",
-      title: "DIDO",
-      content:
-        "<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.",
-    },
-    {
-      id: "collapseTwo",
-      title: "DIDO",
-      content:
-        "<strong>This is the second item's accordion body.</strong> It is hidden by default. You can modify any of this with custom CSS or overriding our default variables.",
-    },
-    {
       id: "collapseThree",
-      title: "DIDO",
+      title: "What can I do with DIDO?",
       content:
-        "<strong>This is the third item's accordion body.</strong> It is hidden by default. You can modify any of this with custom CSS or overriding our default variables.",
+        "<strong>You can:</strong><ul><li>Open apps directly with a voice or text command</li><li>Search the internet or specific apps</li><li>Generate AI-powered images</li><li>Upload PDFs and ask questions about their content</li></ul>DIDO is built to assist you efficiently and intuitively.",
+    },
+    {
+      id: "collapseFive",
+      title: "Do I need to install DIDO?",
+      content:
+        "<strong>No installation is required.</strong> DIDO works directly in your web browser. For added convenience, a desktop app version is available for faster access.",
+    },
+    {
+      id: "collapseSix",
+      title: "Where can I find DIDO after opening it?",
+      content:
+        "<strong>Once opened, DIDO minimizes to your system tray.</strong> You can find the icon near your clock (bottom-right on Windows, top-right on macOS). Just click the icon to reopen the assistant anytime.",
     },
   ];
+  
 
   useGSAP(()=>{
     gsap.from('#faq', {
@@ -52,7 +53,7 @@ const FAQ = () => {
       <div className="flex flex-col items-center justify-center">
        
       {accordionItems.map((item, index) => (
-        <div key={item.id} className="accordion-item  py-2 my-4 border-b-2 border-[#FFFCE1] w-[95%]">
+        <div key={item.id} className="accordion-item cursor-pointer py-2 my-4 border-b-2 border-[#FFFCE1] w-[95%]">
           <h2 className="accordion-header">
             <button
               className="accordion-button flex justify-between items-center w-full p-4 text-left font-medium   focus:outline-none"
