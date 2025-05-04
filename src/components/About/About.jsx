@@ -117,7 +117,6 @@ import React, { useEffect } from 'react';
               <p>Search Capabilities</p>
             </div>
           </div>
-        </div>
 
 <<<<<<< HEAD
         
