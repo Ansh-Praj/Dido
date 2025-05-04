@@ -119,7 +119,10 @@ import React, { useEffect } from 'react';
           </div>
         </div>
 
+<<<<<<< HEAD
         
+=======
+>>>>>>> fadad5039d4db870281f4fe043f9b27731e2bbb3
         <div className='relative h-32 lg:h-auto'> 
           <h1 id="box-1" className='bg-yellow-100 w-[150px] h-[150px] border absolute right-[30%] top-[-50%] lg:w-[250px] lg:h-[250px]    lg:right-[10%] lg:top-[5%] z-1'></h1>
           <h1 id="box-2" className='bg-yellow-200 w-[150px] h-[150px] border absolute right-[7%] top-[10%] lg:w-[250px] lg:h-[250px]   lg:right-[-4%] lg:top-[35%]'></h1>
