@@ -26,7 +26,7 @@ const FAQ = () => {
       id: "collapseSix",
       title: "How to use DiDo?",
       content:
-        "<strong>DiDo use your voice to run specific tasks.</strong> If you want to use PDF EXxplainer or Image Generator, you will have to open the application from the system tray. (bottom-right on Windows, top-right on macOS). Just click the icon to reopen the assistant anytime.",
+        "<strong>DiDo use your voice to run specific tasks.</strong> If you want to use PDF Explainer or Image Generator, you will have to open the application from the system tray. (bottom-right on Windows, top-right on macOS). Just click the icon to reopen the assistant anytime.",
     },
   ];
   
