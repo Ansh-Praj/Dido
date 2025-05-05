@@ -17,16 +17,16 @@ const FAQ = () => {
         "<strong>You can:</strong><ul><li>Open apps directly with a voice or text command</li><li>Search the internet or specific apps</li><li>Generate AI-powered images</li><li>Upload PDFs and ask questions about their content</li></ul>DIDO is built to assist you efficiently and intuitively.",
     },
     {
-      id: "collapseFive",
-      title: "Do I need to install DIDO?",
-      content:
-        "<strong>No installation is required.</strong> DIDO works directly in your web browser. For added convenience, a desktop app version is available for faster access.",
-    },
-    {
       id: "collapseSix",
       title: "Where can I find DIDO after opening it?",
       content:
         "<strong>Once opened, DIDO minimizes to your system tray.</strong> You can find the icon near your clock (bottom-right on Windows, top-right on macOS). Just click the icon to reopen the assistant anytime.",
+    },
+    {
+      id: "collapseSix",
+      title: "How to use DiDo?",
+      content:
+        "<strong>DiDo use your voice to run specific tasks.</strong> If you want to use PDF EXxplainer or Image Generator, you will have to open the application from the system tray. (bottom-right on Windows, top-right on macOS). Just click the icon to reopen the assistant anytime.",
     },
   ];
   
@@ -53,10 +53,10 @@ const FAQ = () => {
       <div className="flex flex-col items-center justify-center">
        
       {accordionItems.map((item, index) => (
-        <div key={item.id} className="accordion-item cursor-pointer py-2 my-4 border-b-2 border-[#FFFCE1] w-[95%]">
-          <h2 className="accordion-header">
+        <div key={item.id} className="accordion-item py-2 my-4 border-b-2 border-[#FFFCE1] w-[95%]">
+          <h2 className="accordion-header ">
             <button
-              className="accordion-button flex justify-between items-center w-full p-4 text-left font-medium   focus:outline-none"
+              className="accordion-button flex cursor-pointer justify-between items-center w-full p-4 text-left font-medium   focus:outline-none"
               aria-expanded={openIndex === index}
               aria-controls={item.id}
               onClick={() => toggleAccordion(index)}
